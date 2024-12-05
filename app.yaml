@@ -5,18 +5,20 @@ handlers:
     static_files: favicon.png
     upload: favicon\.png
 
-  - url: /src/images
-    static_dir: src/images
+  - url: /www/images
+    static_dir: www/images
 
-  - url: /src/scripts
-    static_dir: src/scripts
+  - url: /www/scripts
+    static_dir: www/scripts
 
-  - url: /src/styles
-    static_dir: src/styles
+  - url: /www/styles
+    static_dir: www/styles
 
   - url: /.*
     static_files: index.html
     upload: index.html
+    secure: never
 
   - url: /(.*)
     script: auto
+    secure: never

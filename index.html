@@ -6,12 +6,13 @@
     <title>Asclepius</title>
 
     <!-- Own Styles -->
-    <link rel="stylesheet" href="src/styles/styles.css" />
-    <link rel="stylesheet" href="src/styles/responsive.css" />
+    <link rel="stylesheet" href="/www/styles/styles.css" />
+    <link rel="stylesheet" href="/www/styles/responsive.css" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   </head>
+
   <body>
     <div id="app">
       <nav>
@@ -37,7 +38,10 @@
           <div class="jumbotron">
             <div class="inner-jumbotron">
               <h2>Free Skin Prediction</h2>
-              <p>Take advantage of free fast and reliable skin image prediction now!</p>
+              <p>
+                Take advantage of free fast and reliable skin image prediction
+                now!
+              </p>
             </div>
           </div>
         </div>
@@ -51,13 +55,22 @@
             </div>
 
             <div class="predict-container">
-              <form id="predictForm" class="predict-form" enctype="multipart/form-data">
+              <form
+                id="predictForm"
+                class="predict-form"
+                enctype="multipart/form-data"
+              >
                 <div id="dropArea">
                   <p>
-                    Silakan klik tombol "Select your picture" atau drag & drop berkas Anda
-                    untuk memilih gambar.
+                    Silakan klik tombol "Select your picture" atau drag & drop
+                    berkas Anda untuk memilih gambar.
                   </p>
-                  <input type="file" id="skinFile" name="skin" accept="image/*" />
+                  <input
+                    type="file"
+                    id="skinFile"
+                    name="skin"
+                    accept="image/*"
+                  />
                   <label class="btn" id="skinFileLabel" for="skinFile">
                     Select your picture
                   </label>
@@ -72,7 +85,10 @@
 
               <div class="result-container">
                 <div id="waitingToPredicting">
-                  <img src="src/images/waiting.svg" alt="Waiting to predicting" />
+                  <img
+                    src="/www/images/waiting.svg"
+                    alt="Waiting to predicting"
+                  />
                   <p>Menunggu untuk memprediksi gambar</p>
                 </div>
                 <div class="loading"></div>
@@ -109,8 +125,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="src/scripts/utils.js"></script>
-    <script src="src/scripts/api.js"></script>
-    <script src="src/scripts/main.js"></script>
+    <script src="/www/scripts/utils.js"></script>
+    <script src="/www/scripts/api.js"></script>
+    <script src="/www/scripts/main.js"></script>
   </body>
 </html>
